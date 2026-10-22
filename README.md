@@ -1,4 +1,4 @@
-<img width="1411" height="855" alt="image" src="https://github.com/user-attachments/assets/76a13966-9c87-4bb9-ac03-d663cb8b968a" />[README.md](https://github.com/user-attachments/files/33819824/README.md)
+<img width="1411" height="855" alt="image" src="https://github.com/user-attachments/assets/76a13966-9c87-4bb9-ac03-d663cb8b968a" />
 <div align="center">
 
 # SAM2-Dehaze
@@ -13,7 +13,6 @@
 [![DOI](https://img.shields.io/badge/DOI-10.3390%2Fs25227097-green)](https://doi.org/10.3390/s25227097)
 
 </div>
-![Uploading image.png…]()
 
 ## Introduction
 
@@ -24,7 +23,7 @@ Built on a five-stage U-Net architecture, SAM2-Dehaze injects SAM2-derived seman
 ## Overall Architecture
 
 <div align="center">
-  <img src="assets/SAM2_Dehaze_Architecture.png" alt="Overall architecture of SAM2-Dehaze" width="100%">
+![Uploading image.png…]()
   <p><em>Figure 1. Overall architecture of SAM2-Dehaze. SAM2-derived semantic priors guide the five-stage dehazing U-Net, and the network is optimized with L1 and contrastive losses.</em></p>
 </div>
 
@@ -93,31 +92,10 @@ Before testing, set the pretrained dehazing model checkpoint, test dataset or in
 
 For paired benchmark datasets, common evaluation metrics include **PSNR** and **SSIM**. Please refer to the paper for additional metrics and experimental details.
 
-## Datasets
-
-The published study evaluates SAM2-Dehaze on the following benchmarks:
-
-| Dataset | Usage |
-| :-- | :-- |
-| **RESIDE ITS** | Synthetic indoor training |
-| **RESIDE OTS** | Synthetic outdoor training |
-| **SOTS-Indoor / SOTS-Outdoor** | Synthetic benchmark testing |
-| **Dense-Haze** | Dense-haze evaluation |
-| **NH-Haze** | Non-homogeneous-haze evaluation |
-| **RTTS** | Real-world hazy-image evaluation |
-
 Please obtain these datasets from their official distribution channels and comply with their respective usage terms.
 
-## Quantitative Results
 
 The following **SAM2-Dehaze-L** results are reported in the published paper:
-
-| Dataset | PSNR (dB) ↑ | SSIM ↑ |
-| :-- | --: | --: |
-| **SOTS-Indoor** | **42.83** | **0.997** |
-| **SOTS-Outdoor** | **36.22** | **0.989** |
-| **Dense-Haze** | **20.61** | **0.725** |
-| **NH-Haze** | **22.02** | **0.831** |
 
 These are **paper-reported results**, not claims that the repository has already been independently reproduced. For full comparisons, model variants, efficiency analysis, qualitative examples, and ablation studies, see the [published article](https://doi.org/10.3390/s25227097).
 
